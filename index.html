@@ -1,94 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Booking Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibecode Travel — Explore the world</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Trip.com Clone</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Flights</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Tours</a></li>
-                <li><a href="#">Profile</a></li>
-            </ul>
-        </nav>
-        <input type="text" placeholder="Search for flights, hotels, or tours..." class="search-bar">
-    </header>
-    <main>
-        <section class="carousel">
-            <!-- Featured destinations carousel goes here -->
-        </section>
-        <section class="listings">
-            <h2>Featured Flights</h2>
-            <div class="flight-list">
-                <!-- Flight listings go here -->
-            </div>
-            <h2>Featured Hotels</h2>
-            <div class="hotel-list">
-                <!-- Hotel listings go here -->
-            </div>
-        </section>
-        <section class="profile">
-            <h2>User Profile</h2>
-            <!-- User profile section goes here -->
-        </section>
-    </main>
-    <footer>
-        <p>Book your travel with us!</p>
-    </footer>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">Vibecode</a>
+      <nav class="nav">
+        <a href="/destinations">目的地</a>
+        <a href="/about">關於</a>
+        <a href="/contact">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>探索全球，簡約旅行靈感</h1>
+        <p>機票、行程、靈感。從這裡開始你的下一次旅程。</p>
+        <form class="search-bar" onsubmit="event.preventDefault(); alert('搜尋功能尚未接 backend');">
+          <input type="search" placeholder="輸入城市、國家或景點" aria-label="搜尋目的地">
+          <button type="submit">搜尋</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="popular container">
+      <h2>熱門目的地</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://picsum.photos/seed/1/800/500" alt="目的地 A">
+          <div class="card-body">
+            <h3>巴黎, 法國</h3>
+            <p>浪漫、藝術與美食。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/2/800/500" alt="目的地 B">
+          <div class="card-body">
+            <h3>京都, 日本</h3>
+            <p>古寺、茶道與四季之美。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://picsum.photos/seed/3/800/500" alt="目的地 C">
+          <div class="card-body">
+            <h3>紐西蘭南島</h3>
+            <p>自然、徒步與冒險。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Vibecode. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    color: white;
-    padding: 10px 20px;
-}
-header .logo {
-    font-size: 1.5em;
-}
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-header nav a {
-    color: white;
-    text-decoration: none;
-}
-.search-bar {
-    padding: 5px;
-}
-.carousel {
-    /* Styles for the carousel */
-}
-.listings {
-    padding: 20px;
-}
-.footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: white;
-}
-
-/* scripts.js */
-document.addEventListener('DOMContentLoaded', function() {
-    // JavaScript for handling user interactions, booking system, etc.
-});
