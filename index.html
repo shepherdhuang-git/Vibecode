@@ -1,19 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Vibecode Features</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <h1>Core Features of Vibecode</h1>
-    <ul>
-        <li>Personalized User Experience</li>
-        <li>Seamless Booking and Payment</li>
-        <li>Real-Time Updates</li>
-        <li>Offline Functionality</li>
-        <li>Smart Search and Filtering</li>
-        <li>Maps and Navigation</li>
-        <li>Social Integration</li>
-        <li>Sustainability Information</li>
-        <li>Multi-Language and Multi-Currency Support</li>
-    </ul>
+    <header>
+        <div class="logo">Trip.com Clone</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for flights, hotels, or tours..." class="search-bar">
+    </header>
+    <main>
+        <section class="carousel">
+            <!-- Featured destinations carousel goes here -->
+        </section>
+        <section class="listings">
+            <h2>Featured Flights</h2>
+            <div class="flight-list">
+                <!-- Flight listings go here -->
+            </div>
+            <h2>Featured Hotels</h2>
+            <div class="hotel-list">
+                <!-- Hotel listings go here -->
+            </div>
+        </section>
+        <section class="profile">
+            <h2>User Profile</h2>
+            <!-- User profile section goes here -->
+        </section>
+    </main>
+    <footer>
+        <p>Book your travel with us!</p>
+    </footer>
 </body>
 </html>
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+header .logo {
+    font-size: 1.5em;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+.search-bar {
+    padding: 5px;
+}
+.carousel {
+    /* Styles for the carousel */
+}
+.listings {
+    padding: 20px;
+}
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
+/* scripts.js */
+document.addEventListener('DOMContentLoaded', function() {
+    // JavaScript for handling user interactions, booking system, etc.
+});
