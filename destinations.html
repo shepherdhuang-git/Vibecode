@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>目的地 — Vibecode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">Vibecode</a>
+      <nav class="nav">
+        <a href="/destinations.html">目的地</a>
+        <a href="/about.html">關於</a>
+        <a href="/contact.html">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:40px 16px;">
+    <h1>所有目的地</h1>
+    <p style="color:var(--muted);margin-top:6px;">使用篩選來快速找到你想去的地方（示範用，尚未連接後端）。</p>
+
+    <section style="display:flex;gap:18px;margin-top:18px;align-items:flex-start;">
+      <aside style="width:260px;background:#fff;padding:14px;border-radius:10px;box-shadow:var(--card-shadow);">
+        <h3>篩選</h3>
+        <div style="margin-top:8px;">
+          <label>大洲</label>
+          <select style="width:100%;padding:8px;margin-top:6px;">
+            <option>所有</option><option>亞洲</option><option>歐洲</option><option>美洲</option><option>大洋洲</option><option>非洲</option>
+          </select>
+        </div>
+        <div style="margin-top:12px;">
+          <label>主題</label>
+          <select style="width:100%;padding:8px;margin-top:6px;">
+            <option>不限</option><option>城市</option><option>海灘</option><option>冒險</option><option>自然</option>
+          </select>
+        </div>
+      </aside>
+
+      <section style="flex:1;">
+        <div class="cards">
+          <!-- 重複使用與首頁相同的卡片風格，這裡列出多個目的地（示範） -->
+          <article class="card">
+            <img src="https://picsum.photos/seed/2/800/500" alt="京都, 日本">
+            <div class="card-body">
+              <h3>京都, 日本</h3>
+              <p>古寺、茶道與四季之美。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/4/800/500" alt="紐約, 美國">
+            <div class="card-body">
+              <h3>紐約, 美國</h3>
+              <p>城市天際線與多元文化。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/8/800/500" alt="冰島">
+            <div class="card-body">
+              <h3>冰島</h3>
+              <p>極光、冰川與地熱奇景。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/12/800/500" alt="溫哥華, 加拿大">
+            <div class="card-body">
+              <h3>溫哥華, 加拿大</h3>
+              <p>山海相伴的戶外生活。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/7/800/500" alt="峇里島, 印尼">
+            <div class="card-body">
+              <h3>峇里島, 印尼</h3>
+              <p>熱帶海灘與文化體驗。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/21/800/500" alt="杜拜, 阿聯">
+            <div class="card-body">
+              <h3>杜拜, 阿聯</h3>
+              <p>超現代建築與沙漠冒險。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/19/800/500" alt="曼谷, 泰國">
+            <div class="card-body">
+              <h3>曼谷, 泰國</h3>
+              <p>街頭美食與寺廟文化。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/seed/23/800/500" alt="聖彼得堡, 俄羅斯">
+            <div class="card-body">
+              <h3>聖彼得堡, 俄羅斯</h3>
+              <p>宮殿、運河與博物館。</p>
+            </div>
+          </article>
+
+          <!-- 更多卡片可按需加入 -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Vibecode. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
