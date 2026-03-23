@@ -1,1 +1,19 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Todo Tracker</title>\n    <style>\n        body { font-family: Arial, sans-serif; }\n        #task-form { margin-bottom: 20px; }\n        #task-list { list-style-type: none; padding: 0; }\n        .task-item { display: flex; justify-content: space-between; margin: 5px 0; }\n    </style>\n</head>\n<body>\n    <h1>Todo Tracker</h1>\n    <form id="task-form">\n        <input type="text" id="task-input" placeholder="Enter a new task..." required>\n        <button type="submit">Add Task</button>\n    </form>\n    <ul id="task-list"></ul>\n    <script>\n        const taskForm = document.getElementById('task-form');\n        const taskInput = document.getElementById('task-input');\n        const taskList = document.getElementById('task-list');\n\n        taskForm.addEventListener('submit', function(event) {\n            event.preventDefault();\n            const taskText = taskInput.value;\n            addTask(taskText);\n            taskInput.value = '';\n        });\n\n        function addTask(taskText) {\n            const listItem = document.createElement('li');\n            listItem.classList.add('task-item');\n            listItem.innerHTML = `\n                <span>${taskText}</span>\n                <div>\n                    <button onclick="toggleComplete(this)">Complete</button>\n                    <button onclick="deleteTask(this)">Delete</button>\n                </div>\n            `;\n            taskList.appendChild(listItem);\n        }\n\n        function toggleComplete(button) {\n            const listItem = button.parentElement.parentElement;\n            listItem.classList.toggle('completed');\n        }\n\n        function deleteTask(button) {\n            const listItem = button.parentElement.parentElement;\n            taskList.removeChild(listItem);\n        }\n    </script>\n</body>\n</html>
+<html>
+<head>
+    <title>Vibecode Features</title>
+</head>
+<body>
+    <h1>Core Features of Vibecode</h1>
+    <ul>
+        <li>Personalized User Experience</li>
+        <li>Seamless Booking and Payment</li>
+        <li>Real-Time Updates</li>
+        <li>Offline Functionality</li>
+        <li>Smart Search and Filtering</li>
+        <li>Maps and Navigation</li>
+        <li>Social Integration</li>
+        <li>Sustainability Information</li>
+        <li>Multi-Language and Multi-Currency Support</li>
+    </ul>
+</body>
+</html>
